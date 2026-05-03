@@ -51,12 +51,12 @@ st.markdown("""
 # ---------------- TITLE ----------------
 
 st.markdown(
-    '<div class="title">🌌 Ultimate 3D Solar System</div>',
+    '<div class="title">🌌 My Solar System</div>',
     unsafe_allow_html=True
 )
 
 st.markdown(
-    '<div class="subtitle">Interactive Planetary Motion Simulation</div>',
+    '<div class="subtitle">Interactive Planetary</div>',
     unsafe_allow_html=True
 )
 
@@ -67,8 +67,7 @@ now = datetime.now()
 st.markdown(
     f"""
     <div class="info">
-    📅 Date: {now.strftime('%d-%m-%Y')} <br>
-    🕒 Time: {now.strftime('%H:%M:%S')}
+    📅 Date: {now.strftime('%d-%m-%Y')}
     </div>
     """,
     unsafe_allow_html=True
@@ -248,7 +247,7 @@ if show_moon:
 
 if show_asteroids:
 
-    asteroid_count = 400
+    asteroid_count = 100
 
     asteroid_x = []
     asteroid_y = []
@@ -296,7 +295,7 @@ st.plotly_chart(fig, use_container_width=True)
 
 # ---------------- MUSIC ----------------
 
-st.sidebar.markdown("🎵 Space Background Music")
+st.sidebar.markdown("🎵")
 
 audio_file = open("space_music.mp3", "rb")
 audio_bytes = audio_file.read()
@@ -308,7 +307,7 @@ st.sidebar.audio(audio_bytes, format="audio/mp3")
 st.markdown(
     """
     <div style='text-align:center;padding:20px;'>
-    🚀 Built with Streamlit + Plotly + Python
+    🚀 Let's Go
     </div>
     """,
     unsafe_allow_html=True
