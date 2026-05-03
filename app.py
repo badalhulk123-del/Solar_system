@@ -8,7 +8,7 @@ import random
 # ---------------- PAGE CONFIG ----------------
 
 st.set_page_config(
-    page_title="Ultimate Solar System",
+    page_title="Solar System",
     page_icon="🌌",
     layout="wide"
 )
@@ -51,12 +51,12 @@ st.markdown("""
 # ---------------- TITLE ----------------
 
 st.markdown(
-    '<div class="title">🌌 Ultimate 3D Solar System</div>',
+    '<div class="title">Solar System</div>',
     unsafe_allow_html=True
 )
 
 st.markdown(
-    '<div class="subtitle">Interactive Planetary Motion Simulation</div>',
+    '<div class="subtitle">Interactive Planetary Motion</div>',
     unsafe_allow_html=True
 )
 
@@ -94,7 +94,7 @@ show_moon = st.sidebar.checkbox("🛰️ Moon Orbit", True)
 planets = {
     "Mercury": {"distance": 0.4, "size": 5, "color": "gray", "speed": 4.8},
     "Venus": {"distance": 0.7, "size": 8, "color": "orange", "speed": 3.5},
-    "Earth": {"distance": 1.0, "size": 9, "color": "blue", "speed": 3.0},
+    "Me": {"distance": 1.0, "size": 9, "color": "blue", "speed": 3.0},
     "Mars": {"distance": 1.5, "size": 7, "color": "red", "speed": 2.4},
     "Jupiter": {"distance": 2.5, "size": 18, "color": "brown", "speed": 1.3},
     "Saturn": {"distance": 3.5, "size": 16, "color": "gold", "speed": 1.0},
@@ -239,9 +239,9 @@ if show_moon:
             size=4,
             color='lightgray'
         ),
-        text=["Moon"],
+        text=["You"],
         textposition="top center",
-        name="Moon"
+        name="You"
     ))
 
 # ---------------- ASTEROID BELT ----------------
@@ -296,7 +296,7 @@ st.plotly_chart(fig, use_container_width=True)
 
 # ---------------- MUSIC ----------------
 
-st.sidebar.markdown("🎵 Space Background Music")
+st.sidebar.markdown("🎵 ")
 
 audio_file = open("space_music.mp3", "rb")
 audio_bytes = audio_file.read()
