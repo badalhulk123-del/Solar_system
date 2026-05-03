@@ -293,14 +293,6 @@ fig.update_layout(
 
 st.plotly_chart(fig, use_container_width=True)
 
-# ---------------- MUSIC ----------------
-
-st.sidebar.markdown("🎵")
-
-audio_file = open("space_music.mp3", "rb")
-audio_bytes = audio_file.read()
-
-st.sidebar.audio(audio_bytes, format="audio/mp3")
 
 # ---------------- FOOTER ----------------
 
