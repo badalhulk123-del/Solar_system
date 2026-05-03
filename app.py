@@ -247,7 +247,7 @@ if show_moon:
 
 if show_asteroids:
 
-    asteroid_count = 100
+    asteroid_count = 300
 
     asteroid_x = []
     asteroid_y = []
