@@ -162,7 +162,7 @@ for planet, data in planets.items():
     z = 0
 
     # Store Earth position
-    if planet == "Earth":
+    if planet == "Me":
         earth_x = x
         earth_y = y
 
